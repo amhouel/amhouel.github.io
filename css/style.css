@@ -1,0 +1,363 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+header, footer {
+	font-family: 'Alice', serif;
+	text-align: center;
+}
+
+header{
+	height: 300px;
+	background-color: rgba(43, 90, 98, 0.5);
+	padding: 20px 0 0 0;
+}
+
+footer{
+	color: #2b4162;
+	background-color: rgba(43, 90, 98, 0.5);
+	margin: 0;
+	padding: 10px 0;
+}
+.footer-text {
+	font-variant: small-caps;
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+.header-title {
+	margin: 10px 0;
+	font-size: 60px;
+	letter-spacing: 2px;
+	color:#2b4162;
+}
+
+.header-subtitle {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color:#2b4162;
+}
+
+.navbar-container {
+	padding: 10px 0;
+	margin: 0;
+	background: rgba(43, 65, 98, 0.8);
+	display: flex;
+	justify-content: center;
+}
+
+.link {
+	margin: 0;
+	padding: 0 20px;
+	font-variant: small-caps;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.link:hover {
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.fixed-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.about-me-image-text {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.about-me-image-container {
+	width: 25%;
+	padding-bottom: 50px;
+}
+
+.about-me-image {
+	width:200px;
+	border: 10px solid #2b4162;
+	border-radius: 100px;
+}
+
+.about-me-text {
+	font-size: 20px;
+	line-height: 30px;
+	width: 70%;
+	margin: 0 0 50px 0;
+}
+
+.resume-download-text {
+	font-size: 20px;
+	margin: 0 0 50px 0;
+}
+
+.resume-download-link {
+	color: #2b4162;
+}
+
+.resume-download-link:hover {
+	font-weight: 700;
+}
+
+.download-icon {
+	font-size: 25px;
+}
+
+.skills-container {
+	color: white;
+	background-color: #2b4162;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23a3e3cf' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23a3e3cf'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.skills-title {
+	padding: 20px 0;
+}
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: "center";
+	width: 90%;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.skills-icon-container {
+	width: 12%;
+	flex-shrink: 0;
+	padding: 5px;
+	border: solid 1px #ffffff;
+	border-radius: 5px;
+	margin: 20px 10px;
+}
+
+.skills-icon-name {
+	margin: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.skills-icon {
+	font-size: 50px;
+	margin: 15px;
+}
+
+.skills-logo {
+	width: 20%;
+	margin: 15px;
+}
+
+.skills-logo-Redux {
+	width: 35%;
+	margin: 15px;
+}
+
+.skills-logo-PostgreSQL--Sequelize {
+	width: 30%;
+	margin: 15px;
+}
+
+.skills-logo-Python {
+	margin: 15px;
+}
+
+.projects-laptop-icon {
+	color: #2b4162;
+	font-size: 25px;
+}
+
+.current-projects-title, .past-projects-title {
+	margin-top: 0;
+	font-style: italic;
+}
+
+.project-slide-link {
+	font-weight: 700;
+	font-size: 25px;
+	margin: 10px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.project-slide-link:hover {
+	color: #2b4162;
+	text-decoration: underline;
+}
+
+.projects-container {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	width: 90%;
+	margin: 10px auto 50px auto;
+	border: solid 10px #2b4162;
+	border-radius: 20px;
+	padding: 15px;
+}
+
+.project {
+	width: 50%;
+	flex-shrink: 0;
+}
+
+.project-skills {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.project-title {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+.project-github-icon {
+	color: #000000;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.project-link {
+	text-decoration: none;
+}
+
+.project-img {
+	width: 300px;
+	margin: 10px auto;
+	border: solid 1px  #2b4162;
+}
+
+.contact-container {
+	color: white;
+	background-color: #2b4162;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23a3e3cf' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23a3e3cf'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");;
+}
+
+.contact-title, .skills-title, .about-me-title, .projects-title {
+	font-family: 'Alice', serif;
+	font-size: 30px;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.about-me-title, .projects-title {
+	color:#2b4162;
+}
+
+.contact-icon-container {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.contact-icon {
+	width: 20%;
+}
+
+.phone {
+	font-size: 20px;
+}
+
+.icon {
+	font-size: 40px;
+	margin: 15px;
+	color: #ffffff;
+}
+
+@media screen and (max-width:1300px){
+	.skills-icon-container {
+		width: 20%;
+	}
+	.contact-icon {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width:1000px){
+	.about-me-image-text {
+		display: block;
+	}
+	.about-me-text {
+		width: 100%;
+	}
+	.about-me-image-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.skills-icon-container {
+		width: 25%;
+	}
+	.projects-container {
+		flex-wrap: wrap;
+		height: 380px;
+		overflow-y: auto;
+	}
+	.project {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.contact-icon-container {
+		flex-wrap: wrap;
+	}
+	.contact-icon {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width:600px){
+	.link {
+		font-size: 15px;
+	}
+	.link:hover {
+		font-size: 20px;
+	}
+	.skills-icon-container {
+		width: 40%;
+	}
+	.skills-icon-name {
+		font-size: 15px;
+	}
+	.projects-container {
+		width: 100%;
+	}
+	.contact-icon-container {
+		display: block;
+	}
+	.contact-icon {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:420px){
+	.link {
+		padding: 0 10px;
+		font-size: 15px;
+	}
+}
